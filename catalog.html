@@ -11,21 +11,23 @@
 
       <div class="page-header__left">
         <a href="">
-          <img src="https://via.placeholder.com/164x36" alt="">
+          <img src="https://via.placeholder.com/164x36" alt="логотип DEVICE">
         </a>
-        <form class="" action="index.html" method="post">
-          <label for="header-search"></label>
-          <input type="text" id="header-search" name="header-search" placeholder="Поиск по сайту">
+        <form action="http://echo.htmlacademy.ru" method="post">
+          <input type="search" id="header-search" name="header-search" placeholder="Поиск по сайту">
+
+          <button type="submit" name="button">найти</button>
         </form>
-        <button type="button" name="button">каталог товаров</button>
+
+        <a>Каталог товаров</a>
       </div>
 
       <div class="page-header__right">
         <ul>
           <li>
-            <a href="">Войти</a>
+            <a href="">Валентин Петухов</a>
           </li>
-          <li hidden>
+          <li>
             <a href="">Выйти</a>
           </li>
           <li>
@@ -57,9 +59,9 @@
     <main class="content">
       <h1>Моноподы для селфи</h1>
 
-      <ul class="content__bread-crumbs">
+      <ul class="bread-crumbs">
         <li>
-          <a href="">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
           <a href="">Каталог товаров</a>
@@ -71,14 +73,15 @@
 
       <section class="content__products-wrapper">
 
-        <form class="content__products-filter" action="index.html" method="post">
+        <form class="content__products-filter" action="http://echo.htmlacademy.ru" method="get">
 
           <!-- filter header there -->
 
           <!-- filter price there -->
 
-          <section class="filter-color">
-            <p class="title">Цвет</p>
+
+          <fieldset class="filter-color">
+            <legend>Цвет</legend>
 
             <input type="checkbox" id="black" name="color" value="Черный">
             <label for="black">Черный</label>
@@ -94,10 +97,10 @@
 
             <input type="checkbox" id="pink" name="color" value="Розовый">
             <label for="pink">Розовый</label>
-          </section>
+          </fieldset>
 
-          <section>
-            <p>Bluetooth</p>
+          <fieldset>
+            <legend>Bluetooth</legend>
 
             <input type="radio" id="yes" name="bluetooth" value="yes">
             <label for="yes">Есть</label>
@@ -105,58 +108,73 @@
             <input type="radio" id="no" name="bluetooth" value="no">
             <label for="no">Нет</label>
 
-          </section>
+          </fieldset>
 
           <button type="submit" name="button">показать</button>
 
         </form>
 
         <section class="content__products">
+
+          <h2 hidden>Список моноподов</h2>
+
           <!-- products header there -->
 
-          <section class="products-list">
+          <ul class="products-list">
 
-            <section class="products-list__item">
-               <div class="products-list__item-image">
-                 <img src="https://via.placeholder.com/360x380" alt="">
-               </div>
-               <p>
-                 <b>Любительская селфи-палка</b>
+            <li class="products-list__item">
+              <div class="products-list__item-image">
+               <img src="https://via.placeholder.com/360x380" alt="селфи-палка для простого пользователя">
+              </div>
+
+              <div class="">
+               <h3>
+                <a href="">Любительская селфи-палка</a>
+               </h3>
                  <span>500 руб</span>
-               </p>
-            </section>
+              </div>
+            </li>
 
-            <section class="products-list__item">
+            <li class="products-list__item">
                <div class="products-list__item-image">
-                 <img src="https://via.placeholder.com/360x380" alt="">
+                 <img src="https://via.placeholder.com/360x380" alt="селфи-палка для профессионального любителя селфи">
                </div>
-               <p>
-                 <b>Профессиональная селфи-палка</b>
-                 <span>1 500 руб</span>
-               </p>
-            </section>
 
-            <section class="products-list__item">
-               <div class="products-list__item-image">
-                 <img src="https://via.placeholder.com/360x380" alt="">
+               <div class="">
+                 <h3>
+                   <a href="">Профессиональная селфи-палка</a>
+                 </h3>
+                 <span>1500 руб</span>
                </div>
-               <p>
-                 <b>Непотопляемая селфи-палка</b>
-                 <span>2 500 руб.</span>
-               </p>
-            </section>
+            </li>
 
-            <section class="products-list__item">
-               <div class="products-list__item-image">
-                 <img src="https://via.placeholder.com/360x380" alt="">
-               </div>
-               <p>
-                 <b>Селфи-палка «Следуй за мной»</b>
+            <li class="products-list__item">
+              <div class="products-list__item-image">
+                <img src="https://via.placeholder.com/360x380" alt="селфи-палка которую нельзя потерять в воде">
+              </div>
+
+              <div class="">
+                <h3>
+                  <a href="">Непотопляемая селфи-палка</a>
+                </h3>
+                <span>2 500 руб</span>
+              </div>
+            </li>
+
+            <li class="products-list__item">
+              <div class="products-list__item-image">
+                <img src="https://via.placeholder.com/360x380" alt="селфи-палка с рукой для остроумных фото">
+              </div>
+
+              <div class="">
+                <h3>
+                    <a href="">Селфи-палка «Следуй за мной»</a>
+                 </h3>
                  <span>4 900 руб.</span>
-               </p>
-            </section>
+               </div>
+            </li>
 
-          </section>
+          </ul>
 
           <!-- products footer there -->
         </section>
@@ -170,7 +188,7 @@
 
       <section class="page-footer">
         <section class="page-footer__left">
-          <a <a href=""> class="logo footer-logo"></a>
+          <a href=""> class="logo footer-logo"></a>
           <p>г. Москва, ул. Строителей, 15</p>
         </section>
 
@@ -189,13 +207,13 @@
 
           <ul>
             <li>
-              <a <a href=""> class="facebook"></a>
+              <a href="" class="facebook"></a>
             </li>
             <li>
-              <a <a href=""> class="instagram"></a>
+              <a href="" class="instagram"></a>
             </li>
             <li>
-              <a <a href=""> class="twitter"></a>
+              <a href="" class="twitter"></a>
             </li>
           </ul>
         </section>
@@ -203,18 +221,21 @@
         <section class="page-footer__right">
           <ul>
             <li>
-              <a href="">Войти</a>
+              <a href="">Валентин Петухов</a>
             </li>
             <li>
-              <a href=""></a>
+              <a href="">Выйти</a>
             </li>
             <li>
-              <a href=""></a>
+              <a href="">Сравнить</a>
+            </li>
+            <li>
+              <a href="">Корзина</a>
             </li>
           </ul>
-          <a href="tel: +7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a>
+          <a href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="https://via.placeholder.com/27x35" alt="">
+            <img src="https://via.placeholder.com/27x35" alt="логотип htmlacademy">
           </a>
         </section>
       </section>
