@@ -14,12 +14,12 @@
           <img src="https://via.placeholder.com/164x36" alt="логотип DEVICE">
         </a>
         <form action="http://echo.htmlacademy.ru" method="post">
+          <label for="header-search">Поиск по сайту</label>
           <input type="search" id="header-search" name="header-search" placeholder="Поиск по сайту">
-
           <button type="submit" name="button">найти</button>
         </form>
 
-        <a>Каталог товаров</a>
+        <a href="">Каталог товаров</a>
       </div>
 
       <div class="page-header__right">
@@ -67,7 +67,7 @@
           <a href="">Каталог товаров</a>
         </li>
         <li>
-          <a href="">Моноподы для селфи</a>
+          <a>Моноподы для селфи</a>
         </li>
       </ul>
 
@@ -75,9 +75,19 @@
 
         <form class="content__products-filter" action="http://echo.htmlacademy.ru" method="get">
 
-          <!-- filter header there -->
+          <header>
+            <p>Фильтр:</p>
+          </header>
 
-          <!-- filter price there -->
+          <fieldset>
+            <legend>Стоимость</legend>
+
+            <div class="range-filter">
+              <button type="button" class="range-filter__from" name="button">0</button>
+              <div class="color-range"></div>
+              <button type="button" class="range-filter__to" name="button">5000</button>
+            </div>
+          </fieldset>
 
 
           <fieldset class="filter-color">
@@ -86,7 +96,7 @@
             <input type="checkbox" id="black" name="color" value="Черный">
             <label for="black">Черный</label>
 
-            <input type="checkbox" id="white" name="color" value="Белый"">
+            <input type="checkbox" id="white" name="color" value="Белый">
             <label for="white">Белый</label>
 
             <input type="checkbox" id="blue" name="color" value="Синий">
@@ -118,7 +128,29 @@
 
           <h2 hidden>Список моноподов</h2>
 
-          <!-- products header there -->
+
+          <!-- products header -->
+          <header class="products-header">
+            <p>Сортировка</p>
+
+            <ul class="products-header__filter">
+              <li>
+                <a>По цене</a>
+              </li>
+              <li>
+                <a>По типу</a>
+              </li>
+              <li>
+                <a>По популярности</a>
+              </li>
+            </ul>
+
+            <div class="products-header__actions">
+              <button type="button" class="up" name="button"></button>
+              <button type="button" class="down" name="button"></button>
+            </div>
+          </header>
+          <!-- products header end -->
 
           <ul class="products-list">
 
@@ -176,7 +208,25 @@
 
           </ul>
 
-          <!-- products footer there -->
+          <!-- products footer -->
+          <footer class="products-footer">
+            <button type="button" name="button">Назад</button>
+
+            <ul>
+              <li>
+                <a href="">1</a>
+              </li>
+              <li>
+                <a href="">2</a>
+              </li>
+              <li>
+                <a href="">3</a>
+              </li>
+            </ul>
+
+            <button type="button" name="button">Вперед</button>
+          </footer>
+          <!-- products footer end -->
         </section>
 
       </section>
@@ -235,7 +285,7 @@
               <a href="">Корзина</a>
             </li>
           </ul>
-          <a href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a>
+          <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="https://via.placeholder.com/27x35" alt="логотип htmlacademy">
           </a>
