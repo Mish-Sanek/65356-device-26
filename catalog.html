@@ -14,12 +14,45 @@
           <img src="img/logo-device.svg" width="164" height="36" alt="логотип DEVICE">
         </a>
         <form action="http://echo.htmlacademy.ru" method="post">
-          <label for="header-search">Поиск по сайту</label>
+          <label class="visually-hidden" for="header-search">Поиск по сайту</label>
           <input type="search" id="header-search" name="header-search" placeholder="Поиск по сайту">
           <button type="submit" name="button">найти</button>
         </form>
 
         <a href="">Каталог товаров</a>
+
+        <div class="page-header__catalog">
+          <ul>
+            <li>
+              <a href="">Валентин Петухов</a>
+            </li>
+            <li>
+              <a href="">Выйти</a>
+            </li>
+            <li>
+              <a href="">Сравнить</a>
+            </li>
+
+            <li>
+              <a href="">Корзина</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="">Фитнес браслеты</a>
+            </li>
+            <li>
+              <a href="">Умные часы</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="page-header__right">
@@ -125,7 +158,7 @@
 
         <section class="content__products">
 
-          <h2 hidden>Список моноподов</h2>
+          <h2 class="visually-hidden">Список моноподов</h2>
 
 
           <!-- products header -->
@@ -156,6 +189,10 @@
             <li class="products-list__item">
               <div class="products-list__image">
                 <img src="img/item-1.jpg" width="360" height="380" alt="селфи-палка для простого пользователя">
+                <div class="products-list__actions">
+                  <button type="button" name="button">В корзину</button>
+                  <button type="button" name="button">Добавить к сравнению</button>
+                </div>
               </div>
 
               <div class="products-list__info">
@@ -169,6 +206,10 @@
             <li class="products-list__item">
                <div class="products-list__image">
                  <img src="img/item-2.jpg" width="360" height="380" alt="селфи-палка для профессионального любителя селфи">
+                 <div class="products-list__actions">
+                   <button type="button" name="button">В корзину</button>
+                   <button type="button" name="button">Добавить к сравнению</button>
+                 </div>
                </div>
 
                <div class="products-list__info">
@@ -182,6 +223,10 @@
             <li class="products-list__item">
               <div class="products-list__image">
                 <img src="img/item-3.jpg" width="360" height="380" alt="селфи-палка которую нельзя потерять в воде">
+                <div class="products-list__actions">
+                  <button type="button" name="button">В корзину</button>
+                  <button type="button" name="button">Добавить к сравнению</button>
+                </div>
               </div>
 
               <div class="products-list__info">
@@ -195,6 +240,10 @@
             <li class="products-list__item">
               <div class="products-list__image">
                 <img src="img/item-4.jpg" width="360" height="380" alt="селфи-палка с рукой для остроумных фото">
+                <div class="products-list__actions">
+                  <button type="button" name="button">В корзину</button>
+                  <button type="button" name="button">Добавить к сравнению</button>
+                </div>
                 <span>new</span>
               </div>
 

@@ -14,12 +14,41 @@
           <img src="img/logo-device.svg" width="164" height="36" alt="логотип DEVICE">
         </a>
         <form action="http://echo.htmlacademy.ru" method="post">
-          <label for="header-search">Поиск по сайту</label>
+          <label class="visually-hidden" for="header-search">Поиск по сайту</label>
           <input type="search" id="header-search" name="header-search" placeholder="Поиск по сайту">
           <button type="submit" name="button">найти</button>
         </form>
 
         <a href="">Каталог товаров</a>
+
+        <div class="page-header__catalog">
+          <ul>
+            <li>
+              <a href="">Войти</a>
+            </li>
+            <li>
+              <a href="">Сравнить</a>
+            </li>
+            <li>
+              <a href="">Корзина</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="">Фитнес браслеты</a>
+            </li>
+            <li>
+              <a href="">Умные часы</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="page-header__right">
@@ -55,7 +84,7 @@
     <!-- content -->
     <main class="content">
 
-      <h1 hidden>Магазин товаров DEVICE</h1>
+      <h1 class="visually-hidden">Магазин товаров DEVICE</h1>
 
       <!-- slider -->
       <div class="slider">
@@ -64,7 +93,7 @@
 
           <!-- slide -->
           <div class="slide">
-            <img src="img/slide-1.png" width="384" height="486" alt="Самая длинная палка для селфи доступна в нашем магазине">
+            <img src="img/slider-1.png" width="384" height="486" alt="Самая длинная палка для селфи доступна в нашем магазине">
 
             <div class="slide-info">
               <p class="slide-info__title">
@@ -96,7 +125,7 @@
 
           <!-- slide -->
           <div class="slide">
-            <img src="img/slide-1.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+            <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
 
             <div class="slide-info">
               <p class="slide-info__title">Худеем  <br> правильно!</p>
@@ -115,7 +144,7 @@
 
           <!-- slide -->
           <div class="slide">
-            <img src="img/slide-1.png" width="526" height="334" alt="">
+            <img src="img/slider-3.png" width="526" height="334" alt="">
 
             <div class="slide-info">
               <p class="slide-info__title">Порхает как бабочка, жалит как пчела!</p>
@@ -244,7 +273,7 @@
       <!-- additional info -->
       <section class="additional-info">
 
-        <h2 hidden>Информация и контакты</h2>
+        <h2 class="visually-hidden">Информация и контакты</h2>
 
         <section class="additional-info__about">
           <h3>О нас</h3>
@@ -333,6 +362,43 @@
 
     </footer>
     <!-- page footer end -->
+
+    <!-- popups -->
+
+    <!-- write us -->
+    <div class="write-us">
+      <form class="write-us__form" action="index.html" method="post">
+
+        <button type="button" class="write-us__close" name="button"></button>
+
+        <div class="">
+          <label for="contact-name"></label>
+          <input type="text" id="contact-name" name="" placeholder="Имя Фамилия">
+        </div>
+
+        <div class="">
+          <label for="contact-email"></label>
+          <input id="contact-email" type="email" name="" placeholder="email@example.com">
+        </div>
+
+        <div class="">
+          <label for="contact-about"></label>
+          <textarea name="name" id="contact-about" placeholder="В свободной форме"></textarea>
+        </div>
+
+        <button type="button" class="submit" name="button"></button>
+      </form>
+    </div>
+    <!-- write us end -->
+
+    <!-- map -->
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779967!2d37.52742931614872!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1568639457030!5m2!1sru!2sru" width="960" height="559" allowfullscreen=""></iframe>
+      <button type="button" class="map__close" name="button"></button>
+    </div>
+    <!-- map end -->
+
+    <!-- popups end -->
 
   </body>
 </html>
