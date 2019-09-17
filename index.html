@@ -10,10 +10,10 @@
     <header class="page-header">
 
       <div class="page-header__left">
-        <a href="">
+        <a>
           <img src="img/logo-device.svg" width="164" height="36" alt="логотип DEVICE">
         </a>
-        <form action="http://echo.htmlacademy.ru" method="post">
+        <form action="http://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="header-search">Поиск по сайту</label>
           <input type="search" id="header-search" name="header-search" placeholder="Поиск по сайту">
           <button type="submit" name="button">найти</button>
@@ -107,7 +107,7 @@
               <ul>
                 <li>
                   <span>8,5 м</span>
-                  <span class="class="caption"">Длина палки</span>
+                  <span class="caption">Длина палки</span>
                 </li>
                 <li>
                   <span>5 кг</span>
@@ -170,9 +170,9 @@
         </div>
 
         <div class="slider-switch">
-          <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
+          <button type="button" aria-label="первый слайд" name="button"></button>
+          <button type="button" aria-label="второй слайд" name="button"></button>
+          <button type="button" aria-label="третий слайд" name="button"></button>
         </div>
 
       </div>
@@ -309,7 +309,7 @@
 
       <div class="page-footer__wrapper">
         <div class="page-footer__left">
-          <a href="">
+          <a>
             <img src="img/logo-device-yellow.svg" width="164" height="36" alt="логотип DEVICE">
           </a>
           <p>г. Москва, ул. Строителей, 15</p>
@@ -330,13 +330,13 @@
 
           <ul>
             <li>
-              <a href="" class="facebook"></a>
+              <a href="" aria-label="ссылка на фейсбук" class="facebook"></a>
             </li>
             <li>
-              <a href="" class="instagram"></a>
+              <a href="" aria-label="ссылка на инстаграм" class="instagram"></a>
             </li>
             <li>
-              <a href="" class="twitter"></a>
+              <a href="" aria-label="ссылка на твиттер" class="twitter"></a>
             </li>
           </ul>
         </div>
@@ -367,34 +367,40 @@
 
     <!-- write us -->
     <div class="write-us">
-      <form class="write-us__form" action="index.html" method="post">
+      <form class="write-us__form" action="http://echo.htmlacademy.ru" method="post">
 
-        <button type="button" class="write-us__close" name="button"></button>
+        <h4 class="visually-hidden">Свяжитесь с нами</h4>
 
-        <div class="">
-          <label for="contact-name"></label>
+        <button type="button" class="write-us__close" aria-label="закрыть контактную форму" name="button"></button>
+
+        <p>
+          <label for="contact-name">Ваше имя:</label>
           <input type="text" id="contact-name" name="" placeholder="Имя Фамилия">
         </div>
 
-        <div class="">
-          <label for="contact-email"></label>
+        <p>
+          <label for="contact-email">Ваш e-mail:</label>
           <input id="contact-email" type="email" name="" placeholder="email@example.com">
-        </div>
+        </p>
 
-        <div class="">
-          <label for="contact-about"></label>
+        <p>
+          <label for="contact-about">Текст письма:</label>
           <textarea name="name" id="contact-about" placeholder="В свободной форме"></textarea>
-        </div>
+        </p>
 
-        <button type="button" class="submit" name="button"></button>
+        <button type="submit" name="button">Отправить</button>
       </form>
     </div>
     <!-- write us end -->
 
     <!-- map -->
     <div class="map">
+
+      <button type="button" class="map__close" aria-label="закрыть карту" name="button"></button>
+
+      <h4 class="visually-hidden">Мы на карте</h2>
+
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779967!2d37.52742931614872!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1568639457030!5m2!1sru!2sru" width="960" height="559" allowfullscreen=""></iframe>
-      <button type="button" class="map__close" name="button"></button>
     </div>
     <!-- map end -->
 
